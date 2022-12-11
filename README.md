@@ -8,8 +8,13 @@ A simple chatbot that uses markov chains to generate responses. It can be traine
 3. Run `python3 bot.py -train <filename>.txt -b1`
 4. Chat with your bot!
 
+## Live demo
+I've trained a bot on my own chat logs. You can chat with the bot [here](http://ssoohhaamm.pythonanywhere.com/). Use with caution.
+
 
 ## Usage
+
+### For web interface, see [here](FlaskApp.md).
 
 ### Basic usage
 
@@ -68,7 +73,7 @@ my_bot.respond("hi") # output maybe "hello"
 	
 	bot.reply_transform = shout
 	```
-	
+
 - Use debug mode to print debug messages. Debug mode is disabled by default. To enable debug mode, set `debug` to `True` in the `Bot` class, or
 	```python
 	my_bot = bot.Bot(debug=True)
@@ -144,8 +149,14 @@ For more information, see [this](https://faq.whatsapp.com/en/android/23756533/).
 - [ ] context based responses (remember the last few messages)
 - [x] training on multiple chat logs
 - [ ] efficient storage of model
-- [ ] media support (images, stickers, etc.) 
+- [x] web interface
+- [x] media support (images, stickers, etc.)
+- [ ] easy way to train bots online (website?)
 - [ ] you tell me
+
+## License
+
+[MIT](LICENSE.md)
 
 ## Author
 
