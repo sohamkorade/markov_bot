@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chatbot</title>
+	<link rel="stylesheet" href="static/style.css">
+	<link rel="shortcut icon" href="static/favicon.ico">
+</head>
+
+<body>
+	<div class="container">
+		<div class="chat-title">
+			<select id="player" name="player" class="choose" onchange="setPlayer()">
+				<option value="0">Chatting with Bot 1</option>
+				<option value="1">Chatting with Bot 2</option>
+			</select>
+		</div>
+		<div id="chats">
+			<div class="dotsContainer" id="dots">
+				<span id="dot1"></span><span id="dot2"></span><span id="dot3"></span>
+			</div>
+		</div>
+		<div class="chat-footer">
+			<div>
+				<!-- sticker chooser -->
+				<!-- <div id="sticker_container">
+					<img src="static/stickers/1.webp" onclick="sendSticker('1')">
+				</div> -->
+			</div>
+			<div>
+				<!-- <button id="stickerchooser" type="button" onclick="sendClick()">😀</button> -->
+				<input id="input" type="text" placeholder="Type message..." autocomplete="off" spellcheck="false"
+					onkeydown="if (event.key == 'Enter') sendClick()"></input>
+				<button id="send" type="button" onclick="sendClick()">Send</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="static/script.js"></script>
+<!-- <script type='text/javascript' src="//wurfl.io/wurfl.js"></script> -->
+
+</html>
